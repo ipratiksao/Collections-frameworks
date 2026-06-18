@@ -1,0 +1,22 @@
+import java.util.LinkedList;
+public class LinkedLists {
+    public static void main(String[] args) {
+        LinkedList  li = new LinkedList() ;
+        li.add(10);
+        li.add("Kodnest");
+        li.add('c');
+        li.add(false);
+        li.add(26.45);
+        System.out.println(li);
+        li.addFirst("Pratik");
+        li.addLast("Sao");
+        li.add(4,'b');
+        System.out.println(li);
+        li.remove(3);
+        li.removeFirst();
+        li.removeLast();
+        System.out.println(li);
+        System.out.println(li.size());
+        System.out.println(li.isEmpty());
+    }
+}
