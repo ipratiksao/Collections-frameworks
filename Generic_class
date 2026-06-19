@@ -1,0 +1,26 @@
+package generics_collections_part;
+
+class Box<t> {
+	private t item;
+	public void setitem(t item) {
+		this.item = item;
+		
+	}
+	public t getitem () {
+		return item;
+	}
+}
+public class Main {
+
+	public static void main(String[] args) {
+		Box<String> stringBox = new Box<> ();
+		stringBox.setitem("Textbook");
+		System.out.println("String item: " + stringBox.getitem());
+		
+		Box<Integer> intBox = new Box<> ();
+		intBox.setitem(123);
+		System.out.println("INT item: " + intBox.getitem());
+		
+	}
+
+}
