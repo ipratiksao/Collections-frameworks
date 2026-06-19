@@ -1,0 +1,43 @@
+// package generics_collections_part;
+
+public class Employee <t>{
+	t id;
+	String name;
+	int salary;
+	
+	public Employee(t id, String name, int salary) {
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	public t getid() {
+		return id;
+	}
+	public String getname() {
+		return name;
+	}
+	public int getsalary() {
+		return salary;
+	}
+
+}
+// package generics_collections_part;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		Employee <String> e1 = new Employee<String>("EMP01", "Vikas",50000);
+		System.out.println(e1.getid());
+		System.out.println(e1.getname());
+		System.out.println(e1.getsalary());
+		
+		System.out.println();
+		
+		Employee<Integer> e2 = new Employee <Integer>(123,"pratik",55000);
+		System.out.println(e2.getid());
+		System.out.println(e2.getname());
+		System.out.println(e2.getsalary());
+	}
+
+}
