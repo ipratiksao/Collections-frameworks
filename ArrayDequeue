@@ -1,0 +1,36 @@
+import java.util.ArrayDeque;
+public class ArrayDequeue {
+    public static void main(String[] args) {
+        //can act as both queue as well as stack.
+        ArrayDeque adq = new ArrayDeque();
+        adq.add(10);
+        adq.add(20);
+        adq.add(30);
+        adq.add(40);
+        System.out.println(adq);
+        adq.addFirst(50);
+        adq.addFirst(60);
+        System.out.println(adq);
+
+        adq.remove();
+        System.out.println(adq);
+        adq.remove();
+        System.out.println(adq);
+
+        adq.removeLast();
+        System.out.println(adq);
+
+        adq.removeFirst();
+        System.out.println(adq);
+        // instead of remove can use poll()
+        adq.pollLast();
+        System.out.println(adq);
+
+        adq.add(30);
+        System.out.println(adq);
+       System.out.println(adq.peekFirst());
+       System.out.println(adq.peekLast());
+
+
+    }
+}
