@@ -26,5 +26,7 @@ public class Queue_interface_linked_list {
         queue.remove("Req2");
 
         System.out.println("Queue req :" + queue);
+        // first element on the queue
+        System.out.println(queue.peek());
     }
 }
