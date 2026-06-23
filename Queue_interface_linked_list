@@ -1,0 +1,30 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Queue_interface_linked_list {
+    public static void main(String[] args) {
+        Queue<String> queue = new LinkedList<>();
+        queue.add("Req1");
+        queue.add("Req2");
+        queue.add("Req3");
+
+        System.out.println("Queue req :" + queue);
+        System.out.println("Removing the elements: ");
+         //System.out.println(queue.remove());  will give error when no elements are there in the queue
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+
+        System.out.println("Queue req :" + queue);
+
+        // cannot remove the elements by its index values
+        queue.add("Req1");
+        queue.add("Req2");
+        queue.add("Req3");
+
+        queue.remove("Req2");
+
+        System.out.println("Queue req :" + queue);
+    }
+}
