@@ -1,0 +1,13 @@
+package lambda_expressions;
+
+@FunctionalInterface
+interface Demo {
+	void display();
+}
+public class lambda_expressions {
+
+	public static void main(String[] args) {
+		Demo d = () -> { System.out.println("Hello"); };
+		d.display();
+	}
+}
